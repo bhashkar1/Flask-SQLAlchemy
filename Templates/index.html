@@ -1,0 +1,26 @@
+<body>
+
+<h3> Couse Details</h3>
+
+
+<ul>
+
+    {% for course in courses %}
+         <div class = 'nameAndPrice'>
+        <span class = 'name'><p> {{ course.name }} </p></span>
+        <span class = 'price'><p> -${{ course.price }} </p>
+        </span>
+         </div>
+        <div class = 'description'><p>{{ course.description }}</p>
+        </div>
+
+    {% endfor %}
+
+</ul>
+<div class = 'pane'>
+    <a href = "/new"><h1>New Course </h1> </a>
+</div>
+
+
+</body>
+</html>
