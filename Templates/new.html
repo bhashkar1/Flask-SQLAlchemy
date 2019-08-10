@@ -1,0 +1,30 @@
+<html>
+<head>
+	<link rel=stylesheet type=text/css href="{{ url_for('static', filename='styles.css') }}">
+	</head>
+<body>
+<h3> New Course </h3>
+
+{% if course %}
+<p>{{ course.name }} successfully added! Add new course below.</p>
+<p> <a href="/"> Back to course list </a> </p>
+
+{% endif %}
+<div class = 'pane'>
+<form action="/new" method="POST">
+
+<label for="name_id">Name</label>
+<input id="name_id" name="name_field" type="text" />
+
+<label for="description_id">Description</label>
+<input id="description_id" name="description_field" type="text" size="8" /
+
+<label for="price_id">Price</label>
+<input id="price_id" name="price_field" type="text" size="4" />
+
+<input type="submit" value="Add" />
+
+</form>
+</div>
+</body>
+</html>
