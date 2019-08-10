@@ -1,0 +1,42 @@
+body {
+    font-family: sans-serif;
+    background-color: #333333
+}
+
+h3{
+    color: #ffffff;
+}
+.pane {
+    position: absolute;
+    left: 50%;
+    border: 5px solid;
+    border-radius: 25px;
+    padding: 5px;
+    margin: 5px;
+    border-color: #999999;
+    background-color: #333333
+}
+
+.header {
+    left: 50%;
+    text-align: center;
+}
+
+.name {
+    width: 50%;
+    display: inline-block;
+    float: left;
+}
+
+.description {}
+
+.price {
+    text-align: right;
+    width: 50%;
+    float: right;
+}
+
+.newpane {
+    position: center;
+    font-size: larger;
+}
